@@ -13,9 +13,34 @@
     --fw-reg: 300;
     --fw-bold: 900;
 
-    --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-light: #A9CEF4;
+    --clr-dark: #36494E;
+    --clr-accent: #B4C292;
+
+    --fc-light: #A9CEF4;
+    --fc-dark: #36494E;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,0.25), 0.125em 0.125em 0.25em rgba(0,0,0,0.15)
+}
+
+[data-theme="dark"]{
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light: #474448;
+    --clr-dark: #2D232E;
+    --clr-accent: #B4C292;
+
+    --fc-light: #ffffff;
+    --fc-dark: #ffffff;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -68,11 +93,30 @@ section{
 
 /*Buttons*/
 
+.dark-btn,
+.dark-btn:active
+.dark-btn:focus{
+    padding: 0.5em 2.5em;
+    background: var(--clr-accent);
+    color: var(--fc-dark);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+    float: right;
+    outline: none;
+    margin-top: 2.5em;
+    border: var(--clr-light);
+}
+
 .btn{
     display: inline-block;
     padding: 0.5em 2.5em;
     background: var(--clr-accent);
-    color: var(--clr-dark);
+    color: var(--fc-dark);
     text-decoration: none;
     cursor: pointer;
     font-size: 0.8rem;
@@ -82,6 +126,7 @@ section{
     transition: transform 200ms ease-in-out;
 }
 
+.dark-btn:hover,
 .btn:hover {
     transform: scale(1.1);
 }
@@ -137,7 +182,7 @@ h3 {font-size: var(--fs-h3);}
 .nav{
     position: fixed;
     background: var(--clr-dark);
-    color: var(--clr-light);
+    color: var(--fc-light);
     top: 0;
     bottom: 0;
     left: 0;
@@ -231,6 +276,7 @@ h3 {font-size: var(--fs-h3);}
 
 .intro{
     position: relative;
+    color: var(--fc-dark);
 }
 
 .intro__img{
@@ -277,7 +323,7 @@ h3 {font-size: var(--fs-h3);}
     background-image: url(..\images\book-e1484158615982.jpg);
     background-size: cover;
     background-blend-mode: multiply;
-    color: var(--clr-light);
+    color: var(--fc-light);
     text-align: center;
 }
 
@@ -323,6 +369,7 @@ h3 {font-size: var(--fs-h3);}
 .about-me{
     max-width: 1000px;
     margin: 0 auto;
+    color: var(--fc-dark);
 }
 
 .about-me__img{
@@ -365,7 +412,7 @@ h3 {font-size: var(--fs-h3);}
 
 .my-work{
     background-color: var(--clr-dark);
-    color: var(--clr-light);
+    color: var(--fc-light);
     text-align: center;
 }
 
@@ -453,4 +500,5 @@ h3 {font-size: var(--fs-h3);}
     max-width: 800px;
     margin-top: auto;
     margin-bottom: auto;
+    color: var(--fc-dark);
 }
