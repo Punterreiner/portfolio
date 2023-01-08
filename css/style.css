@@ -126,6 +126,22 @@ section{
     transition: transform 200ms ease-in-out;
 }
 
+.btn-1{
+    display: inline-block;
+    padding: 0.5em 2.5em;
+    background: var(--clr-accent);
+    color: var(--fc-dark);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+    margin-top: 1em;
+}
+
+.btn-1:hover,
 .dark-btn:hover,
 .btn:hover {
     transform: scale(1.1);
@@ -501,4 +517,8 @@ h3 {font-size: var(--fs-h3);}
     margin-top: auto;
     margin-bottom: auto;
     color: var(--fc-dark);
+}
+
+.portfolio-item-individual_images{
+    margin-top: 1em;
 }
