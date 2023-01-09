@@ -192,7 +192,7 @@ h3 {font-size: var(--fs-h3);}
 }
 
 .logo{
-    max-width: 350px;
+    max-width: 17em;
 }
 
 .nav{
